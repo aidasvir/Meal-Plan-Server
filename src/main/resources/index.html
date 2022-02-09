@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meal Plan</title>
+</head>
+
+<style>
+    label {
+        display: inline-block;
+        width: 100px;
+        text-align: right;
+    }
+</style>
+
+
+<body>
+<form id="insertProduct" method="get" action="/insertProduct">
+    <input type="submit" value="Insert new product"/>
+</form>
+<br />
+<form method="post" action="/products">
+    <input type="submit" value="Show all products" />
+</form>
+<br />
+<form id="showProduct" method="post" action="/product">
+    <label for="product">Product name:</label><br>
+    <input type="text" name="product" id="product"/>
+    <input type="submit" value="Show product"/>
+</form>
+<br />
+
+<form id="showProductsByType" method="post" action="/productsByType">
+    <label for="type">Product type:</label><br>
+    <input type="text" name="type" id="type"/>
+    <input type="submit" value="Show products"/>
+</form>
+<br />
+<p><u>Create your plan:</u></p>
+
+<form id="add" method="post" action="/add">
+    <label for="ingredient">Product name:</label><br>
+    <input type="text" name="ingredient" /><br>
+    <label for="size">Weight (g):</label><br>
+    <input type="number" name="size" /><br><br>
+
+    <input type="submit" value="Add product to meal"/><br>
+</form>
+<br />
+<form method="post" action="/addToPlan">
+    <input type="submit" value="Add meal to plan" />
+</form>
+<br />
+<br />
+<form method="post" action="/plan">
+    <input type="submit" value="Show my plan" />
+</form>
+<br />
+<form method="post" action="/macros">
+    <input type="submit" value="Show plan macronutrients" />
+</form>
+<br />
+<br />
+<br />
+
+
+</body>
+</html>

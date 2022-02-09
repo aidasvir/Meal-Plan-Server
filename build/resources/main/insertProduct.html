@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insert new product</title>
+</head>
+<body>
+
+<form id="insertProduct" method="post" action="/insertNewProduct">
+
+    <label for="type">Type:</label><br>
+    <input type="text" name="type" /><br>
+
+    <label for="meal">Product name:</label><br>
+    <input type="text" name="meal" /><br><br>
+
+    Macronutrients in 1g:<br><br>
+    <label for="calories">Calories:</label><br>
+    <input type="text" name="calories" /><br>
+
+    <label for="carbs">Carbohydrates:</label><br>
+    <input type="text" name="carbs" /><br>
+
+    <label for="protein">Protein:</label><br>
+    <input type="text" name="protein" /><br>
+
+    <label for="fats">Fats:</label><br>
+    <input type="text" name="fats" /><br>
+
+    <label for="fiber">Fiber:</label><br>
+    <input type="text" name="fiber" /><br><br>
+
+    <input type="submit" value="Insert new product"/><br><br>
+</form>
+
+<form method="get" action="/login">
+    <input type="submit" value="Back to main page" />
+</form>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    implementation 'mysql:mysql-connector-java:8.0.27'
+    implementation group: 'commons-dbcp', name: 'commons-dbcp', version: '1.4'
+    implementation 'org.hibernate:hibernate-core-jakarta:5.6.0.Final'
+    implementation 'org.glassfish.jaxb:jaxb-runtime:3.0.0'
+    implementation "com.sparkjava:spark-core:2.8.0"
+    implementation 'org.json:json:20171018'
+    implementation 'com.google.code.gson:gson:2.8.9'
+}
+
+test {
+    useJUnitPlatform()
+}
